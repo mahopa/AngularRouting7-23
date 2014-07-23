@@ -1,0 +1,10 @@
+﻿<!--Uses Home Controller-->
+<h1>Welcome to the Cartoons App</h1>
+<h2>Please Select a Cartoon from Below</h2>
+
+<table class="table table-striped table-responsive">
+    <tr data-ng-repeat="cartoon in cartoons">
+        <td>{{cartoon.name}}</td>
+        <td><a href="#/cartoons/{{cartoon.name}}" class="btn btn-primary">See Details</a></td>
+    </tr>
+</table>

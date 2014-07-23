@@ -1,0 +1,12 @@
+﻿<h1>Add a New Cartoon!</h1>
+{{title}}
+<div>
+    <img ng-src="{{cartoon.pic}}" />
+    <input type="text" placeholder="Cartoon Name" data-ng-model="cartoon.name" />
+    <input type="text" placeholder="Cartoon Image Url"
+           data-ng-model="cartoon.pic" />
+    <input type="text" placeholder="Show they are in"
+           data-ng-model="cartoon.show" />
+    <div class="btn btn-success" data-ng-click="addCartoon(cartoon)">Add</div>
+
+</div>
